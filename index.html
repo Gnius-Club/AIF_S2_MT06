@@ -1,24 +1,289 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Misión 6 : El Primer Acertijo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Misión 6 : El Primer Acertijo</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Misión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Introducir a los estudiantes a la programación textual con Python en Delightex.</li>
+                                        <li>Enseñar el uso de variables y lógica condicional simple (`if`).</li>
+                                        <li>Demostrar el uso de un LLM (Xolo) como colaborador para diseñar y codificar la lógica de un acertijo simple.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡Saludo Interactivo con IA:</strong> Contextualización de la interactividad.</li>
+                                        <li><strong class="tactic-highlight">⚡"I Can Statement" + Presentación del Desafío:</strong> Introducción al diseño de mecánicas de juego.</li>
+                                        <li><strong class="tactic-highlight">⚡AI GYM:</strong> Adquisición conceptual del workflow de diseño lógico con IA (ideación y 'Vibe Coding').</li>
+                                        <li><strong class="tactic-highlight">⚡Brain Spark:</strong> Diseño, codificación colaborativa e implementación de un acertijo simple.</li>
+                                        <li><strong class="tactic-highlight">⚡Gnius STORM:</strong> Demostración en parejas y retroalimentación sobre la lógica del acertijo.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Una escena en Delightex con un acertijo funcional de dos pasos (ej. encontrar una llave para abrir una puerta), implementado con scripts de Python generados a través de 'Vibe Coding' con Xolo.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Acceso a la plataforma Delightex (con entorno Python activo) para cada estudiante.</li>
+                                        <li>Acceso a un LLM para brainstorming (ej. ChatGPT).</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-11).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar que el editor de Python en Delightex está funcional.</li>
+                                                <li>Tener una escena base (de la Misión 5) disponible para que los estudiantes la usen.</li>
+                                                <li>Familiarizarse con el ejemplo de la 'llave_encontrada' para poder guiar a los estudiantes.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Entender el concepto de 'Vibe Coding' (el estudiante describe el 'qué', la IA el 'cómo') y el doble rol de la IA en esta sesión (ideación y generación de código).</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. y Contexto de Misión ⏰ 3 minutos</h2>
+                <p>Establecer un ambiente de trabajo profesional, contextualizar la misión del día y guiar la activación individualizada de Xolo, el copiloto de IA.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Contexto ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y presenta la misión: dar alma a los mundos a través de la interactividad.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Desarrolladores. Sus mundos tienen forma, estilo y perspectiva. Ahora, les falta alma: la interactividad. Hoy escribirán sus primeras líneas de código en Python para crear un acertijo simple. No se trata solo de programar, sino de diseñar una lógica que desafíe al jugador. La interactividad es el núcleo de toda experiencia de juego."</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación de IA y Perfil ⏰ 2 minutos</h3>
+                            <p>El facilitador da la instrucción explícita a los alumnos para que saluden a Xolo en el chat.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Procedan con la activación de su sesión. Abran el chat y envíen el saludo a Xolo, incluyendo su nombre, perfil e intereses para la Misión 6."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 7 minutos</h2>
+                <p>Clarificar las metas de aprendizaje y presentar la programación como una herramienta de diseño de mecánicas de juego.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: El Desafío del Día ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador introduce la programación con Python y el concepto de lógica condicional.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Esta es una sesión fundamental. Pasamos de ser directores de arte a ser diseñadores de mecánicas de juego. Introduciremos la programación con Python, el lenguaje que da vida a las interacciones en Delightex. Empezaremos con lo más básico pero poderoso: una condición. 'SI el jugador hace X, ENTONCES sucede Y'. Esta es la base de cualquier regla en un juego o experiencia."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Objetivo de Aprendizaje (I Can Statement) ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje concreto de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Al finalizar esta sesión, podrán afirmar con confianza: <strong>'Yo puedo escribir un script básico en Python para crear una interacción condicional y puedo colaborar con una IA para diseñar la lógica de un acertijo simple.'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM ⏰ 10 minutos</h2>
+                <p>Guiar a los estudiantes para que comprendan el workflow de diseño y programación de lógica con IA.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Diálogo Conceptual con Xolo ⏰ 10 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) El facilitador instruye a los estudiantes sobre cómo iniciar su diálogo con Xolo para entender el proceso de dos pasos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Entramos al A.I. GYM. Un buen diseñador planifica la lógica antes de escribir código. Van a aprender un workflow de dos pasos. Pregúntenle a Xolo: <strong>'Xolo, explícame el workflow de dos pasos para diseñar y programar la lógica de un acertijo: la ideación con un LLM y la ejecución con Vibe Coding.'</strong> Él les explicará cómo usar una IA para brainstorm, y luego cómo traducir esa idea a código Python a través de Vibe Coding con él."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark ⏰ 15 minutos</h2>
+                <p>Supervisar el workflow de diseño, generación de código con Xolo e implementación de un acertijo simple.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Diseño de la Mecánica ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) Los estudiantes, usando una de sus escenas, diseñan un acertijo simple y consultan con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Ahora, al Brain Spark. Abran una de sus escenas. Su misión es diseñar e implementar un acertijo básico. Definan claramente su condición y su resultado. ¿Qué debe hacer el jugador primero? ¿Cuál es la recompensa? Una vez que tengan la lógica, descríbansela a Xolo usando el formato 'Vibe Coding' que aprendieron. Por ejemplo: 'Queremos que si el jugador hace clic en la llave, se active un portal'."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Implementación y Pruebas ⏰ 10 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Los equipos implementan los scripts de Xolo y prueban la lógica en 'Play Mode'.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">"Xolo les proporcionará los scripts de Python necesarios. Su tarea ahora es técnica: deben asignar cada script al objeto correcto dentro de la jerarquía de Delightex. Una vez asignados, entren en 'Play Mode' y prueben exhaustivamente si la lógica funciona como esperaban. ¿La condición bloquea correctamente la acción? ¿El resultado se activa cuando se cumple la condición? Verifíquenlo."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Moderar una fase de retroalimentación estructurada entre pares sobre la lógica y claridad de los acertijos.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Think (Reflexión Individual) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 8) El facilitador guía una breve reflexión individual sobre la lógica del acertijo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Tiempo. Reflexión individual. Piensen en la lógica que crearon. ¿Cuál fue la condición? ¿Cuál fue el resultado? ¿Qué parte fue más desafiante: diseñar la lógica o implementar el código generado por Xolo?"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Pair (Intercambio en Parejas) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) En parejas, los estudiantes demuestran sus acertijos funcionales.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Ahora, en parejas. Demuestren su acertijo al compañero. Expliquen brevemente la lógica que lo sustenta: 'La condición es... y el resultado es...'. El compañero prueba el acertijo y prepara su feedback. Luego, intercambien roles."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Share (Retroalimentación Estructurada) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 10) El facilitador provee una estructura para que el feedback sobre el diseño de juego sea efectivo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Para el feedback, usen esta estructura: <strong>1. 'La lógica de tu acertijo es clara porque...' 2. 'Una pregunta que tengo sobre el código que usaste es...' 3. 'Una idea para hacerlo más interesante sería...'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Síntesis y Cierre ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 11) El facilitador concluye la sesión, cerrando el primer módulo del curso.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Hoy han insuflado vida a sus mundos. Una simple declaración 'if' es la puerta de entrada a sistemas de una complejidad inmensa. Han aprendido a dirigir IAs para la ideación y la ejecución de lógica. Damos por concluido el primer módulo. En el siguiente, llevaremos estas creaciones a la Realidad Aumentada. Prepárense para romper la barrera entre el mundo digital y el físico."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
